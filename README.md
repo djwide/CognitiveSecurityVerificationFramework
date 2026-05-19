@@ -82,10 +82,6 @@ CSVF is especially relevant to LLM applications involving RAG, copilots, agentic
 │   ├── domain-inference-risk.md
 │   ├── leakage-event-rate.md
 │   └── crawl-resilience-score.md
-├── crosswalks/
-│   ├── owasp.md
-│   ├── nist-ai-rmf.md
-│   └── mitre-atlas.md
 └── examples/
     ├── domain-inventory-template.md
     ├── join-matrix-template.md
