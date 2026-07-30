@@ -103,12 +103,12 @@ ISVF's thesis is that these regimes already impose confidentiality duties, but t
 
 ## Control Families
 
-ISVF organizes its controls into eight families. Each family addresses a distinct layer of cognitive security risk. Together they span the full lifecycle of an LLM-enabled system — from governance and data ingestion through inference testing and procurement-ready assurance.
+ISVF organizes its controls into eight families. Each family addresses a distinct layer of idea security risk. Together they span the full lifecycle of an LLM-enabled system — from governance and data ingestion through inference testing and procurement-ready assurance.
 
 ### Family A — Governance and Accountability
 
-- Appoint a cognitive security owner with defined authority over boundary decisions, risk acceptance, and evidence readiness.
-- Maintain a cognitive security risk register that explicitly includes semantic leakage, unauthorized domain reach, and reachability drift.
+- Appoint a idea security owner with defined authority over boundary decisions, risk acceptance, and evidence readiness.
+- Maintain a idea security risk register that explicitly includes semantic leakage, unauthorized domain reach, and reachability drift.
 - Define ownership for domain boundaries, join approvals, and residual-risk acceptance decisions.
 - Include export-controlled technical data, legal privilege, regulated data, trade secrets, and other high-consequence categories where relevant.
 
@@ -163,7 +163,7 @@ ISVF organizes its controls into eight families. Each family addresses a distinc
 
 ## Evidence Packs
 
-At minimum, the assurance pack should function as a single evidentiary record that the system's cognitive boundaries are defined, enforced, and monitored over time.
+At minimum, the assurance pack should function as a single evidentiary record that the system's idea boundaries are defined, enforced, and monitored over time.
 
 ### Required Contents
 
@@ -227,7 +227,7 @@ LLM-era security requires standards that treat meaning, joins, and inference as 
 - testing and quantifying reachability risk through DIR-based inference testing
 - packaging the resulting evidence in forms that support assurance, procurement, and audit
 
-The paper's contribution is broader than those four pillars alone. It argues that cognitive security must begin upstream, before sensitive information is ingested into vector stores, prompt contexts, or memory layers. It argues that organizations must pay far more attention to joins, especially the difficult problem of anticipating which combinations of individually permissible domains will later produce prohibited inferences. It argues that Unreachable Statement Classes are especially useful because they force policy to name the outcomes that truly matter. It argues that post-leak response must extend beyond simple disclosure handling to include purge, containment, vendor engagement where possible, architectural revision, and in some cases strategic reassessment of the value lost when sensitive knowledge is no longer exclusive. And it argues that for the most sensitive workflows, the correct boundary may be architectural: some information should never enter a vendor-controlled model plane at all.
+The paper's contribution is broader than those four pillars alone. It argues that idea security must begin upstream, before sensitive information is ingested into vector stores, prompt contexts, or memory layers. It argues that organizations must pay far more attention to joins, especially the difficult problem of anticipating which combinations of individually permissible domains will later produce prohibited inferences. It argues that Unreachable Statement Classes are especially useful because they force policy to name the outcomes that truly matter. It argues that post-leak response must extend beyond simple disclosure handling to include purge, containment, vendor engagement where possible, architectural revision, and in some cases strategic reassessment of the value lost when sensitive knowledge is no longer exclusive. And it argues that for the most sensitive workflows, the correct boundary may be architectural: some information should never enter a vendor-controlled model plane at all.
 
 Finally, ISVF is best understood not as a finished answer, but as a practical starting point for making inference boundaries legible and enforceable before those boundaries disappear into the background of ordinary organizational life.
 

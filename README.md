@@ -18,7 +18,7 @@ ISVF asks an additional question:
 
 > What conclusions can this system derive once prompts, retrieved documents, tools, memory, and outputs are combined into one inferential workflow?
 
-The framework is designed to help organizations make cognitive security boundaries explicit, testable, and auditable.
+The framework is designed to help organizations make idea security boundaries explicit, testable, and auditable.
 
 ---
 
@@ -32,7 +32,7 @@ ISVF is built around several core ideas:
 - **Unreachable Statement Classes (USCs)** — categories of conclusions that policy requires the system not to make reachable.
 - **Domain Inventory and Join Matrix** — a structured record of information domains and which combinations among them are allowed, prohibited, or approval-gated.
 - **Boundary Enforcement Map** — documentation of where boundaries are actually enforced, including retrieval, context assembly, tools, memory, and output handling.
-- **Evidence Packs** — audit-ready artifacts showing that cognitive boundaries are defined, enforced, tested, and monitored.
+- **Evidence Packs** — audit-ready artifacts showing that idea boundaries are defined, enforced, tested, and monitored.
 
 ---
 
@@ -73,7 +73,7 @@ ISVF is especially relevant to LLM applications involving RAG, copilots, agentic
 ├── works-cited.md
 ├── CONTRIBUTING.md
 ├── csvf/
-│   └── cognitive-security-verification-framework.md
+│   └── idea-security-verification-framework.md
 ├── glossary/
 │   └── glossary.md
 ├── controls/

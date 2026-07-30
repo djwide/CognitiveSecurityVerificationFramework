@@ -10,7 +10,7 @@ This glossary defines terms used throughout the Idea Security Verification Frame
 The condition in which LLMs are embedded across ordinary organizational tools and workflows rather than confined to a single visible chat interface. Ambient AI degrades governance policies that rely on intentional user behavior because the interfaces multiply and the boundaries dissolve. Content can be retained, logged, reviewed, routed through vendors, and later reintroduced elsewhere in a "leakage cascade." *(See Appendix B of the framework document.)*
 
 **Boundary Enforcement Map**
-A diagram showing the system's information domains, the boundaries between them, and the permitted or prohibited joins. It visualizes how data and meaning can flow across domains and where combinations occur. The map marks enforcement points such as retrieval, context assembly, tools, memory, and outputs. It makes the system's cognitive boundaries explicit and auditable rather than implicit.
+A diagram showing the system's information domains, the boundaries between them, and the permitted or prohibited joins. It visualizes how data and meaning can flow across domains and where combinations occur. The map marks enforcement points such as retrieval, context assembly, tools, memory, and outputs. It makes the system's idea boundaries explicit and auditable rather than implicit.
 
 **Cloud Prompting Governance**
 Policies and controls governing when organizational data may be sent to vendor-controlled or third-party model environments. Includes classification of which data domains may never be sent to consumer or unsanctioned external models, requirements for approved pathways for sensitive workflows, and recognition of ambient copilots and browser assistants as connectors that can create unauthorized joins across domains.
@@ -31,7 +31,7 @@ A draft metric measuring how often a system derives an out-of-domain conclusion 
 A structured record of domains and the combinations among them that are allowed, prohibited, or approval-gated. A "join" includes retrieval, context assembly, tool invocation, memory writes, and outputs that combine information across domains.
 
 **Evidence Pack**
-A compact set of documents, test results, approvals, and telemetry demonstrating control design, implementation, and operating effectiveness for an LLM-enabled system. At minimum, an evidence pack should show that cognitive boundaries are defined, enforced, tested, and monitored over time.
+A compact set of documents, test results, approvals, and telemetry demonstrating control design, implementation, and operating effectiveness for an LLM-enabled system. At minimum, an evidence pack should show that idea boundaries are defined, enforced, tested, and monitored over time.
 
 **Exfiltration**
 The unauthorized movement of protected data or protected meaning out of the intended boundary. In ISVF, exfiltration is treated as distinct from unauthorized domain reach: exfiltration is about data leaving the boundary, while unauthorized domain reach is about prohibited conclusions being derivable within it.
@@ -76,4 +76,4 @@ A category of conclusions, claims, syntheses, or inferences defined by their clo
 
 ---
 
-*Back to framework: [`csvf/cognitive-security-verification-framework.md`](../csvf/cognitive-security-verification-framework.md)*
+*Back to framework: [`csvf/idea-security-verification-framework.md`](../csvf/idea-security-verification-framework.md)*

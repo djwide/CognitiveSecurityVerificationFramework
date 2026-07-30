@@ -28,7 +28,7 @@ This catalog enumerates the controls defined by the Idea Security Verification F
 ### ISVF-GOV-01 — Idea Security Owner
 
 **Mitigation:** ISVF.M0001  
-**Summary:** Appoint a single accountable owner for cognitive security boundaries, risk acceptance, and evidence readiness.
+**Summary:** Appoint a single accountable owner for idea security boundaries, risk acceptance, and evidence readiness.
 
 **Control Statement:** The organization SHALL designate a Idea Security Owner (CSO) with defined authority to approve domain boundary decisions, accept residual risk, and maintain evidence readiness across all in-scope LLM-enabled systems.
 
@@ -47,7 +47,7 @@ This catalog enumerates the controls defined by the Idea Security Verification F
 **Mitigation:** ISVF.M0002  
 **Summary:** Maintain a risk register that explicitly includes semantic leakage, unauthorized domain reach, and reachability risk, mapped to NIST AI RMF functions.
 
-**Control Statement:** The organization SHALL maintain a cognitive security risk register updated on at least a [quarterly / annually — TODO: define cadence] basis and within [30 days — TODO: define SLA] of any material system change. The register SHALL explicitly include risks associated with semantic leakage, cross-domain inference, and reachability drift.
+**Control Statement:** The organization SHALL maintain a idea security risk register updated on at least a [quarterly / annually — TODO: define cadence] basis and within [30 days — TODO: define SLA] of any material system change. The register SHALL explicitly include risks associated with semantic leakage, cross-domain inference, and reachability drift.
 
 **Evidence Requirements:**
 - Current risk register document with date of last review
@@ -62,7 +62,7 @@ This catalog enumerates the controls defined by the Idea Security Verification F
 ### ISVF-GOV-03 — Export Control and Deemed Export Coverage
 
 **Mitigation:** ISVF.M0003  
-**Summary:** Incorporate export-controlled technical data and deemed export scenarios into cognitive security design.
+**Summary:** Incorporate export-controlled technical data and deemed export scenarios into idea security design.
 
 **Control Statement:** For systems that may process export-controlled technical data, the organization SHALL conduct a deemed-export analysis, identify affected information domains, and apply domain boundary controls sufficient to prevent unauthorized disclosure to foreign nationals or model pathways that constitute a controlled release.
 
@@ -123,7 +123,7 @@ See template: [`examples/unreachable-statement-classes-template.md`](../examples
 ### ISVF-DOM-03 — Boundary Enforcement Map
 
 **Mitigation:** ISVF.M0006  
-**Summary:** Document where cognitive security boundaries are enforced in the system architecture.
+**Summary:** Document where idea security boundaries are enforced in the system architecture.
 
 **Control Statement:** The organization SHALL maintain a Boundary Enforcement Map that identifies enforcement points across retrieval, context assembly, tool invocation, memory, and output handling. The map SHALL include architecture diagrams, enforcement code locations, and named owners for each enforcement point.
 
@@ -436,7 +436,7 @@ See: [`metrics/crawl-resilience-score.md`](../metrics/crawl-resilience-score.md)
 **Mitigation:** ISVF.M0023, ISVF.M0026  
 **Summary:** Emit a standard event schema for security monitoring and investigation.
 
-**Control Statement:** The organization SHALL configure in-scope systems to emit a standard cognitive security event schema that includes at minimum: prompts (or prompt hashes), retrieved document identifiers, tool calls, policy hits and misses, model version, and timestamp. Events SHALL be retained for [define period — TODO] and available for investigation.
+**Control Statement:** The organization SHALL configure in-scope systems to emit a standard idea security event schema that includes at minimum: prompts (or prompt hashes), retrieved document identifiers, tool calls, policy hits and misses, model version, and timestamp. Events SHALL be retained for [define period — TODO] and available for investigation.
 
 **Evidence Requirements:**
 - Event schema documentation
@@ -492,7 +492,7 @@ See template: [`examples/evidence-pack-template.md`](../examples/evidence-pack-t
 **Mitigation:** ISVF.M0025  
 **Summary:** Optionally produce a SOC-style report mapped to AICPA Trust Services Criteria for procurement.
 
-**Control Statement:** The organization SHOULD produce, or be able to produce on request, a summary of cognitive security control design and operating effectiveness mapped to AICPA Trust Services Criteria (Security, Availability, Confidentiality) with a ISVF control crosswalk. This document may be used in procurement, vendor assessment, or regulatory engagement.
+**Control Statement:** The organization SHOULD produce, or be able to produce on request, a summary of idea security control design and operating effectiveness mapped to AICPA Trust Services Criteria (Security, Availability, Confidentiality) with a ISVF control crosswalk. This document may be used in procurement, vendor assessment, or regulatory engagement.
 
 **Evidence Requirements:**
 - SOC-style mapping document (if produced)
