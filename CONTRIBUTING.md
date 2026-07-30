@@ -1,6 +1,6 @@
-# Contributing to CSVF
+# Contributing to ISVF
 
-Thank you for your interest in contributing to the Cognitive Security Verification Framework. This is an early public draft, and community input is essential for developing it into a rigorous, adoptable, and testable standard.
+Thank you for your interest in contributing to the Idea Security Verification Framework. This is an early public draft, and community input is essential for developing it into a rigorous, adoptable, and testable standard.
 
 ---
 
@@ -18,7 +18,7 @@ Valuable contributions include:
 - **Crosswalk improvements** — refine or expand the OWASP, NIST, and MITRE ATLAS crosswalks in [`crosswalks/`](crosswalks/).
 - **Framework critiques** — identify weak or unrealistic assumptions, missing threat patterns, or gaps in coverage.
 - **Red-team scenarios** — contribute adversarial test patterns, including paraphrase attacks, multi-step inference, retrieval chaining, cross-session memory exploitation, and tool-assisted inference.
-- **Regulatory alignment** — align CSVF controls to HIPAA, FERPA, GLBA, ITAR, GDPR, CCPA, FedRAMP, or other regulatory frameworks.
+- **Regulatory alignment** — align ISVF controls to HIPAA, FERPA, GLBA, ITAR, GDPR, CCPA, FedRAMP, or other regulatory frameworks.
 
 ---
 
@@ -30,7 +30,7 @@ Before contributing, please read these principles:
 
 **Auditable.** Contributions should focus on evidence, controls, tests, and repeatable verification. Vague best-practice language should be made concrete wherever possible.
 
-**Framework-aligned.** Contributions should remain complementary to OWASP, NIST, MITRE, and other existing bodies. CSVF is designed as a contribution layer, not a replacement.
+**Framework-aligned.** Contributions should remain complementary to OWASP, NIST, MITRE, and other existing bodies. ISVF is designed as a contribution layer, not a replacement.
 
 **Precise.** Be careful about distinguishing direct disclosure, semantic leakage, and unauthorized domain reach. Imprecision in these distinctions weakens the framework.
 
@@ -62,8 +62,8 @@ Before contributing, please read these principles:
 - Write in clear, direct prose. Avoid jargon that is not defined in the glossary.
 - Use the active voice where possible.
 - Define terms the first time they appear in a new document.
-- Use consistent control ID formats: `CSVF-GOV-01`, `CSVF-DOM-02`, etc.
-- Use consistent mitigation ID formats: `CSVF.M0001`, `CSVF.M0002`, etc.
+- Use consistent control ID formats: `ISVF-GOV-01`, `ISVF-DOM-02`, etc.
+- Use consistent mitigation ID formats: `ISVF.M0001`, `ISVF.M0002`, etc.
 - Use consistent USC ID formats: `USC-001`, `USC-002`, etc.
 - Use consistent domain ID formats: `DOM-001`, `DOM-002`, etc.
 
@@ -96,4 +96,4 @@ Founder, SenteGuard
 <!-- TODO: Add a link to the OWASP working group or Slack channel once community infrastructure is established -->
 <!-- TODO: Add a code of conduct document -->
 <!-- TODO: Define a governance process for resolving disputes about proposed changes -->
-<!-- TODO: Define a versioning scheme for the framework (e.g., CSVF 0.1, 1.0, etc.) -->
+<!-- TODO: Define a versioning scheme for the framework (e.g., ISVF 0.1, 1.0, etc.) -->

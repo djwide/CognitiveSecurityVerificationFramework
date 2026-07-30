@@ -1,6 +1,6 @@
 # Evidence Pack Template
 
-This template provides a starting structure for the CSVF Evidence Pack: the single evidentiary record that a system's cognitive boundaries are defined, enforced, tested, and monitored over time. Complete this document as part of CSVF control **CSVF-ASR-01**.
+This template provides a starting structure for the ISVF Evidence Pack: the single evidentiary record that a system's cognitive boundaries are defined, enforced, tested, and monitored over time. Complete this document as part of ISVF control **ISVF-ASR-01**.
 
 > The evidence pack is the primary artifact for audit, procurement review, and risk acceptance decisions. It should be updated at least annually and within 30 days of any material system change or incident.
 
@@ -13,7 +13,7 @@ This template provides a starting structure for the CSVF Evidence Pack: the sing
 | System Name | `[System name]` |
 | System Description | `[Brief description of what the system does]` |
 | System Owner | `[Name / role]` |
-| Cognitive Security Owner | `[Name / role]` |
+| Idea Security Owner | `[Name / role]` |
 | Evidence Pack Version | `[e.g., 1.0]` |
 | Evidence Pack Date | `[YYYY-MM-DD]` |
 | Review Cycle | `[e.g., Annual + after material changes]` |
@@ -216,11 +216,11 @@ Document explicit risk acceptances for high-sensitivity joins, residual exposure
 
 ## Certification
 
-> By signing this evidence pack, the Cognitive Security Owner certifies that the information above accurately reflects the current state of the system's cognitive security controls, that known gaps are documented under risk acceptances, and that the evidence pack will be updated as defined above.
+> By signing this evidence pack, the Idea Security Owner certifies that the information above accurately reflects the current state of the system's cognitive security controls, that known gaps are documented under risk acceptances, and that the evidence pack will be updated as defined above.
 
 | Role | Name | Signature | Date |
 |---|---|---|---|
-| Cognitive Security Owner | | | |
+| Idea Security Owner | | | |
 | System Owner | | | |
 
 ---

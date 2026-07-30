@@ -1,6 +1,6 @@
 # Domain Inventory Template
 
-This template provides a starting structure for documenting the information domains relevant to an LLM-enabled system. Complete this document as part of CSVF control **CSVF-DOM-01** (Domain Inventory and Join Matrix).
+This template provides a starting structure for documenting the information domains relevant to an LLM-enabled system. Complete this document as part of ISVF control **ISVF-DOM-01** (Domain Inventory and Join Matrix).
 
 > The completed domain inventory should be version-controlled, reviewed on a defined cadence, and updated after material system changes.
 
@@ -12,7 +12,7 @@ This template provides a starting structure for documenting the information doma
 |---|---|
 | System Name | `[System name]` |
 | System Owner | `[Name / role]` |
-| Cognitive Security Owner | `[Name / role]` |
+| Idea Security Owner | `[Name / role]` |
 | Document Version | `[e.g., 1.0]` |
 | Last Reviewed | `[YYYY-MM-DD]` |
 | Next Review Due | `[YYYY-MM-DD]` |

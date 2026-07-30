@@ -1,6 +1,6 @@
-# CSVF Glossary
+# ISVF Glossary
 
-This glossary defines terms used throughout the Cognitive Security Verification Framework (CSVF). Definitions are provisional and subject to community refinement.
+This glossary defines terms used throughout the Idea Security Verification Framework (ISVF). Definitions are provisional and subject to community refinement.
 
 ---
 
@@ -34,13 +34,13 @@ A structured record of domains and the combinations among them that are allowed,
 A compact set of documents, test results, approvals, and telemetry demonstrating control design, implementation, and operating effectiveness for an LLM-enabled system. At minimum, an evidence pack should show that cognitive boundaries are defined, enforced, tested, and monitored over time.
 
 **Exfiltration**
-The unauthorized movement of protected data or protected meaning out of the intended boundary. In CSVF, exfiltration is treated as distinct from unauthorized domain reach: exfiltration is about data leaving the boundary, while unauthorized domain reach is about prohibited conclusions being derivable within it.
+The unauthorized movement of protected data or protected meaning out of the intended boundary. In ISVF, exfiltration is treated as distinct from unauthorized domain reach: exfiltration is about data leaving the boundary, while unauthorized domain reach is about prohibited conclusions being derivable within it.
 
 **Information Substrate**
 The total body of prompts, retrieved data, logs, memory, tool outputs, and connected repositories an LLM-enabled system can draw upon.
 
 **Join**
-Any combination of information across domains, whether through retrieval, tool use, context assembly, memory, or output synthesis. Join governance is a core concern of CSVF because individually permitted fragments can produce prohibited conclusions when combined.
+Any combination of information across domains, whether through retrieval, tool use, context assembly, memory, or output synthesis. Join governance is a core concern of ISVF because individually permitted fragments can produce prohibited conclusions when combined.
 
 **Leakage Event Rate (LER)**
 A draft metric for how often protected information or protected meaning appears in outputs, weighted by materiality. LER is used for release-gate regression checks and trending. *(Provisional — see [`metrics/leakage-event-rate.md`](../metrics/leakage-event-rate.md).)*
@@ -49,13 +49,13 @@ A draft metric for how often protected information or protected meaning appears 
 The model execution environment in which prompts, context, and outputs are processed, whether local or vendor-controlled.
 
 **Reachability**
-The set of conclusions a system can reliably produce under defined operational conditions. In CSVF, a statement class is considered reachable if, under defined system conditions (identity, allowed tools, retrieval policy, prompts, context limits), the system can reliably produce outputs that satisfy a USC description at a repeatable success rate. *(See Appendix B of the framework document for theoretical background.)*
+The set of conclusions a system can reliably produce under defined operational conditions. In ISVF, a statement class is considered reachable if, under defined system conditions (identity, allowed tools, retrieval policy, prompts, context limits), the system can reliably produce outputs that satisfy a USC description at a repeatable success rate. *(See Appendix B of the framework document for theoretical background.)*
 
 **Reachability Drift**
 Change over time in what conclusions become reachable due to model updates, retrieval changes, tool changes, connector growth, or policy shifts. Reachability drift is why monitoring and regression testing are required after any system change.
 
 **Semantic Leakage**
-Disclosure of protected meaning through paraphrase, translation, summarization, or abstraction without necessarily disclosing the original text verbatim. Semantic leakage is one of the two primary failure modes CSVF addresses, alongside unauthorized domain reach.
+Disclosure of protected meaning through paraphrase, translation, summarization, or abstraction without necessarily disclosing the original text verbatim. Semantic leakage is one of the two primary failure modes ISVF addresses, alongside unauthorized domain reach.
 
 **Session Information Budget**
 A cap on how much sensitive material — or which combinations of domains — may enter a single session context. Session information budgets are a specific mitigation against long-context assembly risks and iterative extraction workflows even when each single retrieval appears permissible.

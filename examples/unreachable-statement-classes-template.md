@@ -1,6 +1,6 @@
 # Unreachable Statement Classes (USC) Template
 
-This template provides a starting structure for defining Unreachable Statement Classes (USCs) for an LLM-enabled system. Complete this document as part of CSVF control **CSVF-DOM-02**.
+This template provides a starting structure for defining Unreachable Statement Classes (USCs) for an LLM-enabled system. Complete this document as part of ISVF control **ISVF-DOM-02**.
 
 An **Unreachable Statement Class (USC)** is a category of conclusions, claims, syntheses, or inferences that policy requires the system not to make reachable — including derived conclusions, not only verbatim secrets.
 
@@ -14,7 +14,7 @@ An **Unreachable Statement Class (USC)** is a category of conclusions, claims, s
 |---|---|
 | System Name | `[System name]` |
 | System Owner | `[Name / role]` |
-| Cognitive Security Owner | `[Name / role]` |
+| Idea Security Owner | `[Name / role]` |
 | Document Version | `[e.g., 1.0]` |
 | Last Reviewed | `[YYYY-MM-DD]` |
 | Next Review Due | `[YYYY-MM-DD]` |

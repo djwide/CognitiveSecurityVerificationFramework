@@ -1,6 +1,6 @@
-# CSVF Control Catalog
+# ISVF Control Catalog
 
-This catalog enumerates the controls defined by the Cognitive Security Verification Framework. Controls are organized by family and mapped to CSVF mitigation IDs (as defined in [`crosswalks/mitre-atlas.md`](../crosswalks/mitre-atlas.md)).
+This catalog enumerates the controls defined by the Idea Security Verification Framework. Controls are organized by family and mapped to ISVF mitigation IDs (as defined in [`crosswalks/mitre-atlas.md`](../crosswalks/mitre-atlas.md)).
 
 > **Status:** Draft. Control definitions, testing procedures, and evidence requirements are provisional and subject to community refinement.
 
@@ -10,41 +10,41 @@ This catalog enumerates the controls defined by the Cognitive Security Verificat
 
 | Family Code | Family Name | MITRE Tactic |
 |---|---|---|
-| CSVF-GOV | Governance and Accountability | TA0001 |
-| CSVF-DOM | Domain Modeling and Boundary Claims | TA0002 |
-| CSVF-DATA | Data Classification and Secret Handling | TA0003 |
-| CSVF-CTX | Context and Memory Management | TA0004 |
-| CSVF-EXF | Exfiltration Controls | TA0005 |
-| CSVF-INF | Domain Reach Prevention | TA0006 |
-| CSVF-CLD | Cloud Prompting Governance | TA0007 |
-| CSVF-ADV | Adversary Testing | TA0008 |
-| CSVF-MON | Monitoring, Telemetry, and Drift Detection | TA0009 |
-| CSVF-ASR | Assurance and Reporting | TA0010 |
+| ISVF-GOV | Governance and Accountability | TA0001 |
+| ISVF-DOM | Domain Modeling and Boundary Claims | TA0002 |
+| ISVF-DATA | Data Classification and Secret Handling | TA0003 |
+| ISVF-CTX | Context and Memory Management | TA0004 |
+| ISVF-EXF | Exfiltration Controls | TA0005 |
+| ISVF-INF | Domain Reach Prevention | TA0006 |
+| ISVF-CLD | Cloud Prompting Governance | TA0007 |
+| ISVF-ADV | Adversary Testing | TA0008 |
+| ISVF-MON | Monitoring, Telemetry, and Drift Detection | TA0009 |
+| ISVF-ASR | Assurance and Reporting | TA0010 |
 
 ---
 
-## CSVF-GOV: Governance and Accountability
+## ISVF-GOV: Governance and Accountability
 
-### CSVF-GOV-01 — Cognitive Security Owner
+### ISVF-GOV-01 — Idea Security Owner
 
-**Mitigation:** CSVF.M0001  
+**Mitigation:** ISVF.M0001  
 **Summary:** Appoint a single accountable owner for cognitive security boundaries, risk acceptance, and evidence readiness.
 
-**Control Statement:** The organization SHALL designate a Cognitive Security Owner (CSO) with defined authority to approve domain boundary decisions, accept residual risk, and maintain evidence readiness across all in-scope LLM-enabled systems.
+**Control Statement:** The organization SHALL designate a Idea Security Owner (CSO) with defined authority to approve domain boundary decisions, accept residual risk, and maintain evidence readiness across all in-scope LLM-enabled systems.
 
 **Evidence Requirements:**
 - Named individual in an organizational chart or RACI matrix
 - Written role definition including escalation authority
 - Acknowledgment of ownership (signed or recorded)
 
-<!-- TODO: Define minimum qualifications for the Cognitive Security Owner role -->
+<!-- TODO: Define minimum qualifications for the Idea Security Owner role -->
 <!-- TODO: Specify escalation paths when the CSO is unavailable or in conflict -->
 
 ---
 
-### CSVF-GOV-02 — Cognitive Security Risk Register
+### ISVF-GOV-02 — Idea Security Risk Register
 
-**Mitigation:** CSVF.M0002  
+**Mitigation:** ISVF.M0002  
 **Summary:** Maintain a risk register that explicitly includes semantic leakage, unauthorized domain reach, and reachability risk, mapped to NIST AI RMF functions.
 
 **Control Statement:** The organization SHALL maintain a cognitive security risk register updated on at least a [quarterly / annually — TODO: define cadence] basis and within [30 days — TODO: define SLA] of any material system change. The register SHALL explicitly include risks associated with semantic leakage, cross-domain inference, and reachability drift.
@@ -59,9 +59,9 @@ This catalog enumerates the controls defined by the Cognitive Security Verificat
 
 ---
 
-### CSVF-GOV-03 — Export Control and Deemed Export Coverage
+### ISVF-GOV-03 — Export Control and Deemed Export Coverage
 
-**Mitigation:** CSVF.M0003  
+**Mitigation:** ISVF.M0003  
 **Summary:** Incorporate export-controlled technical data and deemed export scenarios into cognitive security design.
 
 **Control Statement:** For systems that may process export-controlled technical data, the organization SHALL conduct a deemed-export analysis, identify affected information domains, and apply domain boundary controls sufficient to prevent unauthorized disclosure to foreign nationals or model pathways that constitute a controlled release.
@@ -76,11 +76,11 @@ This catalog enumerates the controls defined by the Cognitive Security Verificat
 
 ---
 
-## CSVF-DOM: Domain Modeling and Boundary Claims
+## ISVF-DOM: Domain Modeling and Boundary Claims
 
-### CSVF-DOM-01 — Domain Inventory and Join Matrix
+### ISVF-DOM-01 — Domain Inventory and Join Matrix
 
-**Mitigation:** CSVF.M0004  
+**Mitigation:** ISVF.M0004  
 **Summary:** Maintain a structured inventory of information domains and an explicit join matrix.
 
 **Control Statement:** The organization SHALL maintain a Domain Inventory and Join Matrix for each in-scope LLM-enabled system. The matrix SHALL classify each potential join between domains as: (1) explicitly allowed, (2) prohibited, or (3) conditionally allowed with defined approval requirements.
@@ -99,9 +99,9 @@ See template: [`examples/join-matrix-template.md`](../examples/join-matrix-templ
 
 ---
 
-### CSVF-DOM-02 — Unreachable Statement Classes
+### ISVF-DOM-02 — Unreachable Statement Classes
 
-**Mitigation:** CSVF.M0005  
+**Mitigation:** ISVF.M0005  
 **Summary:** Define classes of conclusions that must not become reachable for each system.
 
 **Control Statement:** The organization SHALL define a catalog of Unreachable Statement Classes (USCs) for each in-scope system. Each USC SHALL specify the semantic category of conclusions that must remain unreachable, the associated information domains, the test method used to evaluate reachability, and the release-gate threshold.
@@ -120,9 +120,9 @@ See template: [`examples/unreachable-statement-classes-template.md`](../examples
 
 ---
 
-### CSVF-DOM-03 — Boundary Enforcement Map
+### ISVF-DOM-03 — Boundary Enforcement Map
 
-**Mitigation:** CSVF.M0006  
+**Mitigation:** ISVF.M0006  
 **Summary:** Document where cognitive security boundaries are enforced in the system architecture.
 
 **Control Statement:** The organization SHALL maintain a Boundary Enforcement Map that identifies enforcement points across retrieval, context assembly, tool invocation, memory, and output handling. The map SHALL include architecture diagrams, enforcement code locations, and named owners for each enforcement point.
@@ -138,11 +138,11 @@ See template: [`examples/unreachable-statement-classes-template.md`](../examples
 
 ---
 
-## CSVF-DATA: Data Classification and Secret Handling
+## ISVF-DATA: Data Classification and Secret Handling
 
-### CSVF-DATA-01 — Secret Taxonomy and Labeling Policy
+### ISVF-DATA-01 — Secret Taxonomy and Labeling Policy
 
-**Mitigation:** CSVF.M0007  
+**Mitigation:** ISVF.M0007  
 **Summary:** Establish a secret taxonomy with consistent labels usable by retrieval, validators, telemetry, and incident response.
 
 **Control Statement:** The organization SHALL establish and maintain a secret taxonomy covering at minimum: regulated, privileged, trade secret, and export-controlled categories. Labels SHALL be applied consistently to raw data, embeddings, caches, and memory artifacts.
@@ -157,9 +157,9 @@ See template: [`examples/unreachable-statement-classes-template.md`](../examples
 
 ---
 
-### CSVF-DATA-02 — Pre-ingestion Classification and Redaction
+### ISVF-DATA-02 — Pre-ingestion Classification and Redaction
 
-**Mitigation:** CSVF.M0008  
+**Mitigation:** ISVF.M0008  
 **Summary:** Classify and redact before ingestion into AI-adjacent stores.
 
 **Control Statement:** The organization SHALL require classification and redaction of data before it is ingested into vector stores, prompt caches, memory layers, fine-tuning corpora, or other AI-adjacent stores. Redaction logs SHALL be maintained for audit and incident response.
@@ -174,9 +174,9 @@ See template: [`examples/unreachable-statement-classes-template.md`](../examples
 
 ---
 
-### CSVF-DATA-03 — Data Provenance and Lineage for AI Outputs
+### ISVF-DATA-03 — Data Provenance and Lineage for AI Outputs
 
-**Mitigation:** CSVF.M0009  
+**Mitigation:** ISVF.M0009  
 **Summary:** Record provenance for retrieved and generated content to support incident investigation and purge targeting.
 
 **Control Statement:** The organization SHALL record provenance metadata for retrieved and generated content sufficient to trace outputs to their source documents, transformations, and model versions. Provenance records SHALL be retained for [define period — TODO] and made available for incident investigation.
@@ -191,11 +191,11 @@ See template: [`examples/unreachable-statement-classes-template.md`](../examples
 
 ---
 
-## CSVF-CTX: Context and Memory Management
+## ISVF-CTX: Context and Memory Management
 
-### CSVF-CTX-01 — Least-Privilege Retrieval
+### ISVF-CTX-01 — Least-Privilege Retrieval
 
-**Mitigation:** CSVF.M0010  
+**Mitigation:** ISVF.M0010  
 **Summary:** Enforce ABAC/RBAC so model context never expands beyond user and task authorization.
 
 **Control Statement:** The organization SHALL enforce least-privilege retrieval using Attribute-Based Access Control (ABAC) or Role-Based Access Control (RBAC) so that retrieved content is bounded by user identity and task authorization. Cross-domain retrieval attempts SHALL generate telemetry events.
@@ -210,9 +210,9 @@ See template: [`examples/unreachable-statement-classes-template.md`](../examples
 
 ---
 
-### CSVF-CTX-02 — Session Information Budgets
+### ISVF-CTX-02 — Session Information Budgets
 
-**Mitigation:** CSVF.M0011  
+**Mitigation:** ISVF.M0011  
 **Summary:** Cap how much sensitive material can enter one session context.
 
 **Control Statement:** The organization SHALL define and enforce per-session information budgets that cap how much sensitive material — and which domain combinations — may enter a single context window during a session. Budget limits SHALL be documented in the join matrix and enforced technically.
@@ -227,9 +227,9 @@ See template: [`examples/unreachable-statement-classes-template.md`](../examples
 
 ---
 
-### CSVF-CTX-03 — Memory Scoping, Retention Windows, and Deletion
+### ISVF-CTX-03 — Memory Scoping, Retention Windows, and Deletion
 
-**Mitigation:** CSVF.M0012  
+**Mitigation:** ISVF.M0012  
 **Summary:** Scope memory by domain and enforce retention windows with deletion capability.
 
 **Control Statement:** The organization SHALL scope agent and session memory by information domain and enforce retention windows. The system SHALL support deletion, rekeying, and separation of user memory from organizational memory. Sensitive content SHALL NOT become durable substrate that expands reachability beyond its authorized window.
@@ -245,11 +245,11 @@ See template: [`examples/unreachable-statement-classes-template.md`](../examples
 
 ---
 
-## CSVF-EXF: Exfiltration Controls
+## ISVF-EXF: Exfiltration Controls
 
-### CSVF-EXF-01 — Output Validation and Semantic Leakage Guardrails
+### ISVF-EXF-01 — Output Validation and Semantic Leakage Guardrails
 
-**Mitigation:** CSVF.M0013, CSVF.M0026  
+**Mitigation:** ISVF.M0013, ISVF.M0026  
 **Summary:** Validate outputs to block or redact protected information and inferred protected conclusions.
 
 **Control Statement:** The organization SHALL implement output validators aligned to the secret taxonomy, including pattern-based, structured, and semantic detectors. Output validators SHALL block or redact: (1) direct protected information, and (2) high-confidence inferred protected conclusions as defined in the USC catalog.
@@ -264,9 +264,9 @@ See template: [`examples/unreachable-statement-classes-template.md`](../examples
 
 ---
 
-### CSVF-EXF-02 — Canary and Honeytoken Instrumentation
+### ISVF-EXF-02 — Canary and Honeytoken Instrumentation
 
-**Mitigation:** CSVF.M0014  
+**Mitigation:** ISVF.M0014  
 **Summary:** Deploy canaries and honeytokens in high-value domains to detect and attribute leakage.
 
 **Control Statement:** The organization SHALL deploy canaries and/or honeytokens in high-value information domains. Alerts SHALL be routed to defined owners and integrated into incident response runbooks.
@@ -282,9 +282,9 @@ See template: [`examples/unreachable-statement-classes-template.md`](../examples
 
 ---
 
-### CSVF-EXF-03 — Revocation and Downstream Purge Playbooks
+### ISVF-EXF-03 — Revocation and Downstream Purge Playbooks
 
-**Mitigation:** CSVF.M0015  
+**Mitigation:** ISVF.M0015  
 **Summary:** Maintain playbooks to revoke access and purge downstream stores after a leak.
 
 **Control Statement:** The organization SHALL maintain documented playbooks for revoking access and purging downstream stores (vector databases, caches, prompt logs, memory layers) following discovery of a leak. Playbooks SHALL be validated through tabletop exercises at least [annually — TODO: define cadence].
@@ -299,11 +299,11 @@ See template: [`examples/unreachable-statement-classes-template.md`](../examples
 
 ---
 
-## CSVF-INF: Domain Reach Prevention
+## ISVF-INF: Domain Reach Prevention
 
-### CSVF-INF-01 — High-Sensitivity Join Approval Workflow
+### ISVF-INF-01 — High-Sensitivity Join Approval Workflow
 
-**Mitigation:** CSVF.M0016  
+**Mitigation:** ISVF.M0016  
 **Summary:** Require explicit approval and documented rationale for joins between high-sensitivity domains.
 
 **Control Statement:** The organization SHALL require documented approval and written rationale before enabling joins between domains classified as high-sensitivity in the join matrix. Approvals SHALL be enforced through change control and technical policy gates.
@@ -318,9 +318,9 @@ See template: [`examples/unreachable-statement-classes-template.md`](../examples
 
 ---
 
-### CSVF-INF-02 — Cross-Domain Inference Testing and DIR Metric
+### ISVF-INF-02 — Cross-Domain Inference Testing and DIR Metric
 
-**Mitigation:** CSVF.M0017, CSVF.M0028  
+**Mitigation:** ISVF.M0017, ISVF.M0028  
 **Summary:** Run cross-domain inference tests for each USC and maintain a DIR metric.
 
 **Control Statement:** The organization SHALL run cross-domain inference tests for each USC in the catalog and maintain a Domain Inference Risk (DIR) metric. DIR SHALL be tracked over time and segmented by system boundary, model version, and prompt template. DIR trends SHALL be reviewed at each release gate and after material system changes.
@@ -337,9 +337,9 @@ See: [`metrics/domain-inference-risk.md`](../metrics/domain-inference-risk.md)
 
 ---
 
-### CSVF-INF-03 — Prohibit LLM Authorization Decisioning
+### ISVF-INF-03 — Prohibit LLM Authorization Decisioning
 
-**Mitigation:** CSVF.M0018  
+**Mitigation:** ISVF.M0018  
 **Summary:** Do not allow LLMs to make authorization decisions.
 
 **Control Statement:** The organization SHALL NOT allow LLM outputs to serve as the final authority for access control, authorization, or permission decisions. Authorization SHALL be deterministic, auditable, and enforced by a control plane external to the model.
@@ -353,11 +353,11 @@ See: [`metrics/domain-inference-risk.md`](../metrics/domain-inference-risk.md)
 
 ---
 
-## CSVF-CLD: Cloud Prompting Governance
+## ISVF-CLD: Cloud Prompting Governance
 
-### CSVF-CLD-01 — Consumer LLM Submission Restrictions
+### ISVF-CLD-01 — Consumer LLM Submission Restrictions
 
-**Mitigation:** CSVF.M0019  
+**Mitigation:** ISVF.M0019  
 **Summary:** Prohibit submission of sensitive data to consumer LLMs without approved configuration and contracts.
 
 **Control Statement:** The organization SHALL prohibit submission of regulated, privileged, export-controlled, classified, or proprietary content to consumer LLMs unless: (1) an approved enterprise configuration is in place, (2) contractual protections meeting organizational requirements are confirmed, and (3) the pathway is listed in the approved cloud pathways inventory.
@@ -373,9 +373,9 @@ See: [`metrics/domain-inference-risk.md`](../metrics/domain-inference-risk.md)
 
 ---
 
-### CSVF-CLD-02 — Approved Enterprise and API Pathways with Vendor Controls
+### ISVF-CLD-02 — Approved Enterprise and API Pathways with Vendor Controls
 
-**Mitigation:** CSVF.M0020  
+**Mitigation:** ISVF.M0020  
 **Summary:** Define approved vendors and configurations with documented retention and data control settings.
 
 **Control Statement:** The organization SHALL maintain an inventory of approved cloud LLM vendors and API configurations, including documented vendor data retention settings, data processing agreements, and configuration baselines. Configuration baselines SHALL be reviewed [annually — TODO: define cadence] and after vendor policy changes.
@@ -390,9 +390,9 @@ See: [`metrics/domain-inference-risk.md`](../metrics/domain-inference-risk.md)
 
 ---
 
-### CSVF-CLD-03 — Cloud Prompt Logging and DLP Hooks
+### ISVF-CLD-03 — Cloud Prompt Logging and DLP Hooks
 
-**Mitigation:** CSVF.M0021  
+**Mitigation:** ISVF.M0021  
 **Summary:** Implement logging and DLP integration for cloud prompting where feasible.
 
 **Control Statement:** Where technically feasible, the organization SHALL implement logging and DLP integration for cloud LLM prompting. Logged events SHALL include at minimum: prompt metadata, policy hits, model version, and timestamp. Logs SHALL be retained for [define period — TODO] and available for incident investigation.
@@ -408,11 +408,11 @@ See: [`metrics/domain-inference-risk.md`](../metrics/domain-inference-risk.md)
 
 ---
 
-## CSVF-ADV: Adversary Testing
+## ISVF-ADV: Adversary Testing
 
-### CSVF-ADV-01 — OWASP LLM Suite Release Gate and Red-Team Testing
+### ISVF-ADV-01 — OWASP LLM Suite Release Gate and Red-Team Testing
 
-**Mitigation:** CSVF.M0022, CSVF.M0027  
+**Mitigation:** ISVF.M0022, ISVF.M0027  
 **Summary:** Run OWASP LLM test suite and adversarial tests at release gates and after material changes.
 
 **Control Statement:** The organization SHALL run the OWASP LLM test suite at release gates and after material changes. In addition, the organization SHALL conduct adversarial testing including: paraphrase attacks, multi-step prompting, retrieval chaining, tool use, and cross-session memory effects, at a cadence of no less than [annually — TODO: define] for each in-scope system.
@@ -429,11 +429,11 @@ See: [`metrics/crawl-resilience-score.md`](../metrics/crawl-resilience-score.md)
 
 ---
 
-## CSVF-MON: Monitoring, Telemetry, and Drift Detection
+## ISVF-MON: Monitoring, Telemetry, and Drift Detection
 
-### CSVF-MON-01 — Standard Cognitive Security Event Schema
+### ISVF-MON-01 — Standard Idea Security Event Schema
 
-**Mitigation:** CSVF.M0023, CSVF.M0026  
+**Mitigation:** ISVF.M0023, ISVF.M0026  
 **Summary:** Emit a standard event schema for security monitoring and investigation.
 
 **Control Statement:** The organization SHALL configure in-scope systems to emit a standard cognitive security event schema that includes at minimum: prompts (or prompt hashes), retrieved document identifiers, tool calls, policy hits and misses, model version, and timestamp. Events SHALL be retained for [define period — TODO] and available for investigation.
@@ -449,9 +449,9 @@ See: [`metrics/crawl-resilience-score.md`](../metrics/crawl-resilience-score.md)
 
 ---
 
-### CSVF-MON-02 — Drift and Boundary Regression Detection
+### ISVF-MON-02 — Drift and Boundary Regression Detection
 
-**Mitigation:** CSVF.M0024  
+**Mitigation:** ISVF.M0024  
 **Summary:** Monitor for behavior drift and boundary regressions after system changes.
 
 **Control Statement:** The organization SHALL monitor for reachability drift and boundary regressions after changes to model version, prompts, retrieval configuration, policies, or tools. Changes SHALL trigger regression test runs for affected USCs. DIR trends SHALL be updated and reviewed.
@@ -466,11 +466,11 @@ See: [`metrics/crawl-resilience-score.md`](../metrics/crawl-resilience-score.md)
 
 ---
 
-## CSVF-ASR: Assurance and Reporting
+## ISVF-ASR: Assurance and Reporting
 
-### CSVF-ASR-01 — Evidence Pack Maintenance
+### ISVF-ASR-01 — Evidence Pack Maintenance
 
-**Mitigation:** CSVF.M0025, CSVF.M0026  
+**Mitigation:** ISVF.M0025, ISVF.M0026  
 **Summary:** Maintain an evidence pack demonstrating control design, implementation, and operating effectiveness.
 
 **Control Statement:** The organization SHALL maintain a current evidence pack for each in-scope LLM-enabled system. The evidence pack SHALL be updated at least [annually — TODO: define cadence] and within [30 days — TODO: define SLA] of any material system change or incident.
@@ -487,19 +487,19 @@ See template: [`examples/evidence-pack-template.md`](../examples/evidence-pack-t
 
 ---
 
-### CSVF-ASR-02 — SOC-Style Crosswalk and Procurement Readiness
+### ISVF-ASR-02 — SOC-Style Crosswalk and Procurement Readiness
 
-**Mitigation:** CSVF.M0025  
+**Mitigation:** ISVF.M0025  
 **Summary:** Optionally produce a SOC-style report mapped to AICPA Trust Services Criteria for procurement.
 
-**Control Statement:** The organization SHOULD produce, or be able to produce on request, a summary of cognitive security control design and operating effectiveness mapped to AICPA Trust Services Criteria (Security, Availability, Confidentiality) with a CSVF control crosswalk. This document may be used in procurement, vendor assessment, or regulatory engagement.
+**Control Statement:** The organization SHOULD produce, or be able to produce on request, a summary of cognitive security control design and operating effectiveness mapped to AICPA Trust Services Criteria (Security, Availability, Confidentiality) with a ISVF control crosswalk. This document may be used in procurement, vendor assessment, or regulatory engagement.
 
 **Evidence Requirements:**
 - SOC-style mapping document (if produced)
 - Evidence of controls mapped in the document
 - Reviewer acknowledgment
 
-<!-- TODO: Define the mapping between CSVF controls and AICPA Trust Services Criteria -->
+<!-- TODO: Define the mapping between ISVF controls and AICPA Trust Services Criteria -->
 <!-- TODO: Define whether an independent auditor attestation is required or optional -->
 
 ---
@@ -512,7 +512,7 @@ See template: [`examples/evidence-pack-template.md`](../examples/evidence-pack-t
 ---
 
 *See also:*
-- *[`crosswalks/mitre-atlas.md`](../crosswalks/mitre-atlas.md) — ATLAS mitigation objects with CSVF crosswalk IDs*
+- *[`crosswalks/mitre-atlas.md`](../crosswalks/mitre-atlas.md) — ATLAS mitigation objects with ISVF crosswalk IDs*
 - *[`crosswalks/nist-ai-rmf.md`](../crosswalks/nist-ai-rmf.md) — NIST RMF function mapping*
 - *[`metrics/`](../metrics/) — Draft metric definitions*
 - *[`examples/`](../examples/) — Templates for key artifacts*

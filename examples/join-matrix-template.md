@@ -1,6 +1,6 @@
 # Join Matrix Template
 
-This template provides a starting structure for documenting the permitted, prohibited, and conditionally allowed joins between information domains in an LLM-enabled system. Complete this document as part of CSVF control **CSVF-DOM-01** (Domain Inventory and Join Matrix).
+This template provides a starting structure for documenting the permitted, prohibited, and conditionally allowed joins between information domains in an LLM-enabled system. Complete this document as part of ISVF control **ISVF-DOM-01** (Domain Inventory and Join Matrix).
 
 A **join** is any combination of information across domains — whether through retrieval, tool use, context assembly, memory writes, or output synthesis.
 
@@ -14,7 +14,7 @@ A **join** is any combination of information across domains — whether through 
 |---|---|
 | System Name | `[System name]` |
 | System Owner | `[Name / role]` |
-| Cognitive Security Owner | `[Name / role]` |
+| Idea Security Owner | `[Name / role]` |
 | Document Version | `[e.g., 1.0]` |
 | Last Reviewed | `[YYYY-MM-DD]` |
 | Next Review Due | `[YYYY-MM-DD]` |

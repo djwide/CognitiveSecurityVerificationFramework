@@ -1,10 +1,10 @@
-# Cognitive Security Verification Framework (CSVF)
+# Idea Security Verification Framework (ISVF)
 
-The Cognitive Security Verification Framework (CSVF) is an open framework for defining, testing, and auditing inference boundaries in LLM-enabled systems.
+The Idea Security Verification Framework (ISVF) is an open framework for defining, testing, and auditing inference boundaries in LLM-enabled systems.
 
-CSVF addresses a growing security problem: organizations are no longer only trying to prevent direct disclosure of secrets. They must also govern what conclusions AI systems can derive, what domains those systems may combine, and what sensitive meanings can become reachable through retrieval, memory, tools, prompts, and synthesis.
+ISVF addresses a growing security problem: organizations are no longer only trying to prevent direct disclosure of secrets. They must also govern what conclusions AI systems can derive, what domains those systems may combine, and what sensitive meanings can become reachable through retrieval, memory, tools, prompts, and synthesis.
 
-This repository contains the public draft of CSVF and is open for community review, critique, and contribution.
+This repository contains the public draft of ISVF and is open for community review, critique, and contribution.
 
 ---
 
@@ -14,7 +14,7 @@ Traditional security asks:
 
 > Who can access which file?
 
-CSVF asks an additional question:
+ISVF asks an additional question:
 
 > What conclusions can this system derive once prompts, retrieved documents, tools, memory, and outputs are combined into one inferential workflow?
 
@@ -24,7 +24,7 @@ The framework is designed to help organizations make cognitive security boundari
 
 ## Key Concepts
 
-CSVF is built around several core ideas:
+ISVF is built around several core ideas:
 
 - **Semantic Leakage** — disclosure of protected meaning through paraphrase, translation, summarization, abstraction, or inference, even when the original secret text is not exposed.
 - **Cross-Domain Inference** — production of a prohibited conclusion by combining fragments from multiple domains that are individually permitted but jointly sensitive.
@@ -38,7 +38,7 @@ CSVF is built around several core ideas:
 
 ## Proposed Metrics
 
-CSVF introduces draft verification metrics for community refinement:
+ISVF introduces draft verification metrics for community refinement:
 
 - **Domain Inference Risk (DIR)** — how often a system derives an out-of-domain conclusion using only in-domain inputs under defined boundary conditions.
 - **Leakage Event Rate (LER)** — how often protected information or protected meaning appears in outputs, weighted by materiality.
@@ -50,7 +50,7 @@ These metrics are provisional. Contributions that refine definitions, testing pr
 
 ## Relationship to Existing Frameworks
 
-CSVF is not intended to replace OWASP, NIST, MITRE ATLAS, or other AI security efforts.
+ISVF is not intended to replace OWASP, NIST, MITRE ATLAS, or other AI security efforts.
 
 It is designed as a contribution layer that can strengthen existing frameworks by adding:
 
@@ -61,7 +61,7 @@ It is designed as a contribution layer that can strengthen existing frameworks b
 - evidence-pack requirements
 - procurement-ready assurance artifacts
 
-CSVF is especially relevant to LLM applications involving RAG, copilots, agentic workflows, long-context systems, memory, tool use, and cloud prompting governance.
+ISVF is especially relevant to LLM applications involving RAG, copilots, agentic workflows, long-context systems, memory, tool use, and cloud prompting governance.
 
 ---
 
@@ -116,7 +116,7 @@ Before submitting a pull request, please open an issue describing the proposed c
 
 ## Contribution Principles
 
-CSVF should remain:
+ISVF should remain:
 
 - **Practical** — useful to engineers, CISOs, auditors, procurement teams, and policy owners.
 - **Auditable** — focused on evidence, controls, tests, and repeatable verification.
@@ -128,7 +128,7 @@ CSVF should remain:
 
 ## Status
 
-CSVF is an early public draft. It should not yet be treated as a finished consensus standard. The goal of open sourcing the framework is to invite community review and develop it into a more rigorous, adoptable, and testable standard over time.
+ISVF is an early public draft. It should not yet be treated as a finished consensus standard. The goal of open sourcing the framework is to invite community review and develop it into a more rigorous, adoptable, and testable standard over time.
 
 ---
 
