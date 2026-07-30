@@ -145,5 +145,5 @@ Recommended approach (to be validated):
 
 - [`metrics/domain-inference-risk.md`](domain-inference-risk.md) — unauthorized domain reach metric
 - [`metrics/crawl-resilience-score.md`](crawl-resilience-score.md) — multi-session extraction testing
-- [`controls/control-catalog.md#csvf-exf-01`](../controls/control-catalog.md) — CSVF-EXF-01 control
-- [`crosswalks/mitre-atlas.md#csvfm0026`](../crosswalks/mitre-atlas.md) — CSVF.M0026 mitigation
+- [`controls/control-catalog.md#csvf-exf-01`](../controls/control-catalog.md) — ISVF-EXF-01 control
+- [`crosswalks/mitre-atlas.md#csvfm0026`](../crosswalks/mitre-atlas.md) — ISVF.M0026 mitigation

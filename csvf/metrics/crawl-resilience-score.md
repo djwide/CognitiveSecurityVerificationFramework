@@ -138,7 +138,7 @@ Recommended approach (to be validated):
 <!-- TODO: Define evaluation criteria for "successful extraction" (same challenge as semantic leakage evaluation) -->
 <!-- TODO: Define CRS thresholds for each USC severity tier -->
 <!-- TODO: Develop tooling to automate multi-session extraction scenario execution -->
-<!-- TODO: Define relationship between CRS and canary/honeytoken instrumentation (CSVF-EXF-02) -->
+<!-- TODO: Define relationship between CRS and canary/honeytoken instrumentation (ISVF-EXF-02) -->
 <!-- TODO: Validate CRS across at least 3 distinct deployment types -->
 <!-- TODO: Define how CRS scenarios should be updated after a successful extraction event -->
 <!-- TODO: Consider whether CRS should incorporate detection speed as a sub-score -->
@@ -149,5 +149,5 @@ Recommended approach (to be validated):
 
 - [`metrics/domain-inference-risk.md`](domain-inference-risk.md) — single-session unauthorized domain reach
 - [`metrics/leakage-event-rate.md`](leakage-event-rate.md) — single-output exfiltration rate
-- [`controls/control-catalog.md#csvf-adv-01`](../controls/control-catalog.md) — CSVF-ADV-01 control
-- [`crosswalks/mitre-atlas.md#csvfm0027`](../crosswalks/mitre-atlas.md) — CSVF.M0027 mitigation
+- [`controls/control-catalog.md#csvf-adv-01`](../controls/control-catalog.md) — ISVF-ADV-01 control
+- [`crosswalks/mitre-atlas.md#csvfm0027`](../crosswalks/mitre-atlas.md) — ISVF.M0027 mitigation

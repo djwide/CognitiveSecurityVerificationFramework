@@ -148,6 +148,6 @@ Recommended approach (to be validated):
 
 - [`metrics/leakage-event-rate.md`](leakage-event-rate.md) — exfiltration-focused metric
 - [`metrics/crawl-resilience-score.md`](crawl-resilience-score.md) — multi-session extraction testing
-- [`controls/control-catalog.md#csvf-inf-02`](../controls/control-catalog.md) — CSVF-INF-02 control
-- [`crosswalks/mitre-atlas.md#csvfm0028`](../crosswalks/mitre-atlas.md) — CSVF.M0028 mitigation
+- [`controls/control-catalog.md#csvf-inf-02`](../controls/control-catalog.md) — ISVF-INF-02 control
+- [`crosswalks/mitre-atlas.md#csvfm0028`](../crosswalks/mitre-atlas.md) — ISVF.M0028 mitigation
 - [`examples/unreachable-statement-classes-template.md`](../examples/unreachable-statement-classes-template.md) — USC template
