@@ -76,4 +76,4 @@ A category of conclusions, claims, syntheses, or inferences defined by their clo
 
 ---
 
-*Back to framework: [`csvf/idea-security-verification-framework.md`](../csvf/idea-security-verification-framework.md)*
+*Back to framework: [`isvf/idea-security-verification-framework.md`](../isvf/idea-security-verification-framework.md)*

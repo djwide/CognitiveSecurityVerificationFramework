@@ -149,5 +149,5 @@ Recommended approach (to be validated):
 
 - [`metrics/domain-inference-risk.md`](domain-inference-risk.md) — single-session unauthorized domain reach
 - [`metrics/leakage-event-rate.md`](leakage-event-rate.md) — single-output exfiltration rate
-- [`controls/control-catalog.md#csvf-adv-01`](../controls/control-catalog.md) — ISVF-ADV-01 control
-- [`crosswalks/mitre-atlas.md#csvfm0027`](../crosswalks/mitre-atlas.md) — ISVF.M0027 mitigation
+- [`controls/control-catalog.md#isvf-adv-01`](../controls/control-catalog.md) — ISVF-ADV-01 control
+- [`crosswalks/mitre-atlas.md#isvfm0027`](../crosswalks/mitre-atlas.md) — ISVF.M0027 mitigation

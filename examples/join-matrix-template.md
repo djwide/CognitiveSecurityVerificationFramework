@@ -91,4 +91,4 @@ Log all joins that were conditionally approved, including the written rationale,
 ---
 
 *See also: [`examples/domain-inventory-template.md`](domain-inventory-template.md) | [`examples/unreachable-statement-classes-template.md`](unreachable-statement-classes-template.md)*  
-*Related control: [`controls/control-catalog.md#csvf-dom-01`](../controls/control-catalog.md)*
+*Related control: [`controls/control-catalog.md#isvf-dom-01`](../controls/control-catalog.md)*

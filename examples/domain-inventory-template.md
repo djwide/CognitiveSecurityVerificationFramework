@@ -77,4 +77,4 @@ For each information domain accessible to or processable by this system, complet
 ---
 
 *See also: [`examples/join-matrix-template.md`](join-matrix-template.md)*  
-*Related control: [`controls/control-catalog.md#csvf-dom-01`](../controls/control-catalog.md)*
+*Related control: [`controls/control-catalog.md#isvf-dom-01`](../controls/control-catalog.md)*

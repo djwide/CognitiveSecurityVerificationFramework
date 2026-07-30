@@ -109,4 +109,4 @@ For each USC, maintain a record of the most recent test run.
 
 *See also: [`examples/domain-inventory-template.md`](domain-inventory-template.md) | [`examples/join-matrix-template.md`](join-matrix-template.md) | [`examples/evidence-pack-template.md`](evidence-pack-template.md)*  
 *Related metrics: [`metrics/domain-inference-risk.md`](../metrics/domain-inference-risk.md)*  
-*Related control: [`controls/control-catalog.md#csvf-dom-02`](../controls/control-catalog.md)*
+*Related control: [`controls/control-catalog.md#isvf-dom-02`](../controls/control-catalog.md)*

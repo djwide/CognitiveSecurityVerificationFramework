@@ -72,7 +72,7 @@ ISVF is especially relevant to LLM applications involving RAG, copilots, agentic
 ├── LICENSE
 ├── works-cited.md
 ├── CONTRIBUTING.md
-├── csvf/
+├── isvf/
 │   └── idea-security-verification-framework.md
 ├── glossary/
 │   └── glossary.md

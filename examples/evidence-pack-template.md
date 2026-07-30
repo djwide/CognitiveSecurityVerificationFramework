@@ -237,4 +237,4 @@ Document explicit risk acceptances for high-sensitivity joins, residual exposure
 - *[`examples/domain-inventory-template.md`](domain-inventory-template.md)*
 - *[`examples/join-matrix-template.md`](join-matrix-template.md)*
 - *[`examples/unreachable-statement-classes-template.md`](unreachable-statement-classes-template.md)*
-- *[`controls/control-catalog.md#csvf-asr-01`](../controls/control-catalog.md)*
+- *[`controls/control-catalog.md#isvf-asr-01`](../controls/control-catalog.md)*
